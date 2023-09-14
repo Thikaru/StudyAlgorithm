@@ -6,14 +6,24 @@
 =======================*/
 #include <iostream>
 
-int main() {
-  int N;
+// 問題のコード
+int InputOrangeToTotalNum() {
   int appleNum = 5;
+  int N;
 
-  // みかんの数の入力
-  std::cout << "みかんの数を入力してください．" << std::endl << "N = ";
   std::cin >> N;
-  std::cout << "みかんとりんごの数の合計は，" << appleNum + N << "個です"
-            << std::endl;
-  return 1;
+  std::cout << appleNum + N << std::endl;
+
+  return 0;
+}
+
+int main() {
+  int test_loop = 0;
+
+  std::cin >> test_loop;
+  for (int i = 0; i < test_loop; i++) {
+    InputOrangeToTotalNum();
+  }
+
+  return 0;
 }
